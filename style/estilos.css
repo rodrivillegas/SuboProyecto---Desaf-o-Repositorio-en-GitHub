@@ -1,0 +1,901 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family:'Atma';
+  color: whitesmoke;
+  background: url(../img/atardecer.jpg);
+  height: 100vh;
+  background-size: cover;
+  overflow: auto;
+}
+
+header {
+  margin: 1.87rem;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around ;
+  align-items: center;
+  margin-right: 1.25rem;
+}
+
+.lista {
+  display: flex;
+  list-style: none;
+  line-height: 1.87rem;
+  text-align: center;
+}
+
+li a {
+  font-size: 2.5rem;
+  color: whitesmoke;
+  text-decoration: none;
+  padding: 0rem;
+}
+
+nav ul li:hover {
+  transform: scale(1.2);
+}
+
+.logo:hover {
+  transform: scale(1.2);
+}
+
+.titular {
+  text-align: center;
+  display: grid;
+  grid-template-columns: repeat(15,1fr);
+  grid-template-rows: 2fr,1fr,1fr;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  margin-top: -6rem;
+}
+
+.titularh1 {
+  font-size: 2.5rem;
+  margin-top: 6.25rem;
+  grid-column: 2/15;
+  grid-row: 1/2;
+}
+
+.titularh2 {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 5rem;
+  grid-column: 3/14;
+  grid-row: 2/3;
+}
+
+.botonTitular {
+  text-decoration: none;
+  font-size: 1.8rem;
+  background: #5cb8ff;
+  padding: 0.31rem 0.4rem 0.31rem 0.4rem; 
+  color: whitesmoke;
+  border-radius: 1.87rem;
+  font-weight: bold;
+  grid-column: 8/8;
+  grid-row: 3/4;
+}
+
+.botonTitular:hover {
+  box-shadow: 0.187rem 0.187rem #FFBF16;
+}
+
+/*comienza primer sección - ¿Quiénes somos?*/
+
+.contenedor {
+  list-style: none;
+}
+
+.contenedorQuienesSomos {
+  margin-left: 2.5rem;
+  list-style: none;
+  width: 80%;
+  height: 100vh;
+}
+
+.contenedorQuienesSomos li a {
+  font-size: 2.5rem;
+  margin: 0rem;
+}
+
+.contenedorQuienesSomos h2 {
+  text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  color: #FFBF16;
+  margin-top: -2rem;
+}
+
+.contenedorQuienesSomosParrafoYImagen {
+  display: grid;
+  grid-template-columns: repeat (7,1fr);
+  grid-template-rows: repeat (7,1fr);
+  width: 65%;
+  align-items: center;
+  text-align: justify;
+  font-size: 1.2rem;
+  color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.imagenCheff {
+  grid-column: 1/3;
+  grid-row: 1/10;
+}
+
+.parrafosQuienesSomos {
+  grid-column: 6/8;
+  grid-row: 1/7;
+  margin-right: -10rem;
+}
+
+.cheff {
+  animation-name: girarEjeY;
+  animation-iteration-count: infinite;
+  animation-duration: 10s;
+  margin-top: -2.2rem;
+  width: 100%;
+  margin-left: -10rem;
+}
+
+@keyframes girarEjeY{
+  from{
+      transform:rotateY(0deg)
+  }
+  to {
+      transform: rotateY(360deg)
+  }
+}
+
+/*comienza segunda sección - Delivery de pedidos*/
+
+.contenedorDeliveryDePedidos h2 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #FFBF16;
+  margin-top: -2.5rem;
+  margin-bottom: -4rem;
+}
+
+.contenedorServicios {
+  height: 80vh;
+  display: grid;
+  margin: 3.1rem;
+  line-height: 1.5rem;
+  grid-template-areas: "servicioR servicioS servicioB"
+                      "servicioH servicioK servicioF";
+  justify-content: space-around;
+}
+
+.servicioResto {
+  color: whitesmoke;
+  grid-area: servicioR;
+  padding: 1.87rem 2.3rem 0rem 2.3rem;    
+}
+
+.servicioSupermercado {
+  color: whitesmoke;
+  grid-area: servicioS;
+  padding: 3.4rem 2.3rem 0rem 2.3rem;
+}
+
+.servicioBebidas {
+  color: whitesmoke;
+  grid-area: servicioB;
+  padding: 1.87rem 2.3rem 0rem 2.3rem;
+}
+
+.servicioHelados {
+  color: whitesmoke;
+  grid-area: servicioH;
+  padding: 0rem 2.3rem 1.87rem 2.3rem;
+}
+
+.servicioKiosco {
+  color: whitesmoke;
+  grid-area: servicioK;
+  padding: 0rem 2.3rem 1.87rem 2.3rem;
+}
+
+.servicioFarmacia {
+  color: whitesmoke;
+  grid-area: servicioF;
+  padding: 0rem 2.3rem 1.87rem 2.3rem;
+}
+
+.contenedorServicios h3 {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.contenedorServicios p {
+  font-size: 1.56rem;
+  text-align: center;
+}
+
+.contenedorServicios img {
+  height: 22%;
+  float: right;
+}
+
+.contenedorServicios img {
+  animation-name: girarReversa;
+  animation-iteration-count:inicial;
+  animation-duration: 2s;
+  animation-direction: reverse;
+}
+
+@keyframes girarReversa{
+  from{
+      transform:rotateY(0deg)
+  }
+  to {
+      transform: rotateY(90deg)
+  }
+}
+
+/*comienza tercera sección - Servicios al barrio*/
+
+.contenedorServiciosAlBarrio {
+  text-align:center;
+  height: 80vh;
+}
+
+.contenedorTitularServiciosAlBarrio h2 {
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: bold;
+  color: #FFBF16;
+  margin-top: -2.5rem;
+}
+
+.contenedorServiciosAlBarrio h3 {
+  font-size: 1.62rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.62rem;
+}
+
+table {
+margin-top: 3.75rem;
+}
+
+.botonBuscarServicio {
+  text-decoration: none;
+  font-size: 1.87rem;
+  background: #5cb8ff;
+  padding: 0.31rem 0.93rem 0.31rem 0.93rem; 
+  color: whitesmoke;
+  border-radius: 1.87rem;
+  font-weight: bold;
+}
+
+.botonBuscarServicio:hover {
+  box-shadow: 0.18rem 0.18rem #FFBF16;
+}
+
+.contenedorServiciosAlBarrio img {
+  width: 50%;
+  margin-right: 3.12rem;
+  animation-name: girar;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+  margin-bottom: 1.5rem;
+}
+
+@keyframes girar{
+  from{
+      transform: rotate3d(0);
+  }
+  to {
+      transform: rotate3d(0, 1, 0.5, 3.142rad);
+  }
+}
+
+/*comienza cuarta sección - Trabajemos Juntos*/
+
+.contenedorTrabajemosJuntosTitular h2{
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: bold;
+  color: #FFBF16;
+  margin-top: -2.5rem;
+}
+
+.contenedorTrabajemosJuntosFormularios h3 {
+  font-size: 1.62rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0.62rem;
+  margin-bottom: 0.93rem;
+}
+
+.formularios {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.25rem;
+  margin: auto;
+  color: whitesmoke;
+  font-style:bold;
+}
+
+/*comienza quinta sección - Preguntas Frecuentes*/
+
+.contenedorPreguntasFrecuentesTitular h2{
+  text-align: center;
+  font-size: 3.75rem;
+  font-weight: bold;
+  color: #FFBF16;
+  margin-bottom: -4rem;
+  margin-top: -2.5rem;
+}
+
+.contenedorPreguntasFrecuentes h3{
+  font-size: 1.56rem;
+  font-weight: bold;
+  text-align: justify;
+  margin-top: 3.1rem;
+  margin-left: 0.5rem;
+}
+
+.contenedorPreguntasFrecuentes p {
+  padding: 1.25rem;
+  margin-bottom: -3.1rem;
+  margin-top: -1.25rem;
+}
+
+.contenedorPreguntasFrecuentes {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 115vh;
+}
+
+/*comienza footer*/
+
+footer {
+  background-color: whitesmoke;
+  width: 100%;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  text-align: center;
+  bottom: 0;
+  position: fixed;
+  color:black;
+  font-weight: bold;
+}
+
+.contenedorTotalFooter {
+  display: flex;
+  justify-content: center;
+}
+
+.redes img {
+  padding-top: 0.2rem;
+  margin-bottom: 0.5rem;
+  height: 50%;
+}
+
+.parrafoFooter {
+  padding-left: 8rem;
+}
+
+
+/* comienza media queries*/
+
+@media only screen and (min-width:603px) and (max-width:1100px){
+
+  /*HOME*/
+
+  .menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .lista {
+    display: block;
+    text-align: right;
+  }
+
+  li a {
+    font-size: 1.2rem;
+    line-height: 1.3rem;
+  }
+
+  nav ul li:hover {
+    transform: scale(0.8);
+  }
+  
+  .logo:hover {
+    transform: scale(0.8);
+  }
+  
+  .titular {
+    margin-top: 2rem;
+
+  }
+
+  .titular h1 {
+    font-size: 3.25rem;
+    margin-top: -4rem;
+  }
+
+  .titularh2 {
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+    grid-column: 3/14;
+  }
+
+  /*¿QUIENES SOMOS?*/
+  
+  .contenedorQuienesSomos li a {
+    font-size: 1.3rem;
+  }
+  
+  .contenedorQuienesSomosParrafoYImagen {
+    font-size: 1.2rem;
+  }
+
+  .contenedorQuienesSomos{
+    height: 100vh;
+
+  }
+  .parrafosQuienesSomos {
+    margin-left: -8rem;
+    margin-right: -5rem;
+    grid-column: 3/5;
+    line-height: 1.6rem;
+  }
+  
+  .cheff {
+    margin-left: -7rem;
+  }
+  
+  /*DELIVERY DE PEDIDOS*/
+
+  .contenedorDeliveryDePedidos h2 {
+    font-size: 2rem;
+    margin-bottom: -4rem;
+    margin-top: -1rem;
+  }
+
+  .contenedorServicios h3 {
+    font-size: 1.5rem;
+  }
+  
+  .contenedorServicios p {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  
+  .contenedorServicios img {
+    height: 15%;
+  }
+  
+  .servicioHelados {
+    margin-top: -5rem;
+    padding-bottom: 0;
+  }
+
+  .servicioSupermercado {
+    margin-top: -2rem;
+  }
+
+  .servicioKiosco {
+    margin-top: -7rem;
+    padding-bottom: 0;
+  }
+
+  .servicioFarmacia {
+    margin-top: -5rem;
+    padding-bottom: 0;
+  }
+  
+  .contenedorServicios img {
+    display: none;
+  }
+ 
+  /*SERVICIOS AL BARRIO*/
+      
+  .contenedorTitularServiciosAlBarrio h2 {
+    font-size: 2.5rem;
+    margin-top: -1rem;
+  }
+
+  .contenedorServiciosAlBarrio h3 {
+    font-size: 1.1rem;
+  }
+
+  .botonBuscarServicio {
+    font-size: 1.3em;
+    padding: 0.20rem 1.2rem 0.20rem 1.2rem;
+    font-weight: bold;
+  }
+
+  .contenedorServiciosAlBarrio img {
+    width: 50%;
+    margin-bottom: 1rem;
+  }
+
+  /*TRABAJEMOS JUNTOS*/
+    
+  .contenedorTrabajemosJuntosTitular h2 {
+    font-size: 2.5rem;
+    margin-top: -1rem;
+  }
+
+  .contenedorTrabajemosJuntosFormularios h3 {
+    font-size: 1rem;
+  }
+
+  .formularios {
+    font-size: 0.8rem;
+  }
+
+  /*PREGUNTAS FRECUENTES*/
+
+  .contenedorPreguntasFrecuentes {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 167vh;
+  }
+  
+  .contenedorPreguntasFrecuentesTitular h2{
+    font-size: 2.5rem;
+    margin-top: -1rem;
+    margin-bottom: -2rem;
+  }
+
+  .contenedorPreguntasFrecuentes h3{
+    font-size: 1.rem;
+    margin-left: 0.5rem;
+  }
+
+  .contenedorPreguntasFrecuentes p {
+    font-size: 0.9rem;
+  }
+
+  .contenedorTotalFooter {
+    display: flex;
+    display: block;
+  }
+
+  footer {
+    font-size: 0.9rem;
+    line-height: 0.5rem;
+    height: 3rem;
+    justify-content: center;
+  }
+
+  .redes img {
+    height: 20px;
+    padding-top: 0.2rem;
+  }
+
+  .parrafoFooter {
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width:602px){
+ 
+  /*HOME*/
+  
+  .menu {
+    display: block;
+    margin-right: -0.5rem;
+    margin-top: -1rem;
+  }
+
+  .lista {
+    display: block;
+    text-align: right;
+    line-height: 0.5px;
+  }
+
+  .lista li a {
+    font-size: 0.9rem;
+  }
+    
+  nav ul li:hover {
+    transform: scale(0.8);
+  }
+  
+  .logo:hover {
+    transform: scale(0.8);
+  }
+
+  .titular {
+    margin-top: 2rem;
+  }
+
+  .titular h1 {
+    margin-top: -4rem;
+    font-size: 3rem;
+    line-height: 2.8rem;
+  }
+  
+  .titular h2 {
+    margin-top: 1.5rem;
+    line-height: 2.2rem;
+    margin-bottom: -2.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .botonTitular {
+    font-size: 1.1rem;
+    padding: 0.20rem 0.6rem 0.20rem 0.6rem;
+  }
+
+  .logo img {
+    width: 50%;
+    margin-bottom: -6rem;
+  }
+  
+  /*¿QUIENES SOMOS?*/
+  
+  .contenedor li a {
+    font-size: 1rem;
+  }
+    
+  li a {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+  
+  .logoSection {
+    width: 47%;
+    margin-bottom: -4.1rem;
+  }
+  
+  .contenedorQuienesSomos {
+    margin-left: auto;
+    margin-right: auto;
+    height: 110vh;
+  }
+  .contenedorQuienesSomos h2 {
+    font-size: 2rem;
+    margin-top: -1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .parrafosQuienesSomos {
+    font-size: 0.9rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cheff {
+    display: none;
+  }
+
+  .contenedorQuienesSomosParrafoYImagen {
+    width: 90%;
+  }
+      
+  /*DELIVERY DE PEDIDOS*/
+
+  .contenedorDeliveryDePedidos {
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .contenedorServiciosAlBarrio {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .contenedorDeliveryDePedidos h2 {
+    text-align: center;
+    font-weight: bold;
+    color: #FFBF16;
+    margin-top: -1rem;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  
+  .contenedorServicios {
+    display: grid;
+    height: 70vh;
+    grid-template-areas: "servicioR servicioS"
+                         "servicioH servicioK"  
+                         "servicioB servicioF";
+    justify-content: center;
+  }
+  
+  .servicioResto {
+    color: whitesmoke;
+    grid-area: servicioR;
+    padding: 1.5rem; 
+  }
+  
+  .servicioSupermercado {
+    color: whitesmoke;
+    grid-area: servicioS;
+    padding: 1.5rem; 
+  }
+    
+  .servicioHelados {
+    color: whitesmoke;
+    grid-area: servicioH;
+    padding: 1.5rem;
+    margin-top: -5rem;
+  }
+  
+  .servicioKiosco {
+    color: whitesmoke;
+    grid-area: servicioK;
+    margin-top: -5rem;
+    padding: 1.5rem; 
+  }
+  
+  .servicioBebidas {
+    color: whitesmoke;
+    grid-area: servicioB;
+    margin-top: -5rem;
+    padding: 1.5rem; 
+  }
+  
+  .servicioFarmacia {
+    color: whitesmoke;
+    grid-area: servicioF;
+    margin-top: -5rem;
+    padding: 1.5rem; 
+  }
+  
+  .contenedorServicios h3 {
+    font-size: 1.1rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .contenedorServicios p {
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 1rem;
+  }
+
+  .contenedorServicios img {
+    display: none;
+  }
+
+  /*SERVICIOS AL BARRIO*/
+      
+  .contenedorTitularServiciosAlBarrio h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    margin-top: -1rem;
+  }
+
+  .contenedorServiciosAlBarrio h3 {
+    font-size: 1rem;
+    margin-bottom: -5rem;
+    font-weight: normal;
+  }
+
+  .botonBuscarServicio {
+    font-size: 1.5rem;
+    padding: 0.20rem 0.6rem 0.20rem 0.6rem;
+  }
+
+  .contenedorServiciosAlBarrio img {
+    width: 80%;
+    margin-bottom: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  table {
+    margin-top: 7rem;
+  }
+  
+  /*TRABAJEMOS JUNTOS*/
+  
+  .contenedorTrabajemosJuntosFormularios {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 110vh;
+  }
+
+  .contenedorTrabajemosJuntosTitular h2 {
+    font-size: 2rem;
+    margin-top: -1rem;
+  }
+
+  .contenedorTrabajemosJuntosFormularios h3 {
+    font-size: 0.85rem;
+    font-weight: normal;
+    text-align: justify;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    line-height: 1rem;
+  }
+
+  .formularios {
+    display: block;
+    font-size: 0.7rem;
+    font-style:normal;
+  }
+
+  .formularioUno {
+    margin-bottom: 1rem;
+  }
+  
+  /*PREGUNTAS FRECUENTES*/
+
+  .contenedorPreguntasFrecuentesTitular h2{
+    font-size: 2.5rem;
+    margin-top: -1rem;
+    line-height: 2.5rem;
+    margin-bottom: -2rem;
+    text-align: center;
+  }
+
+  .contenedorPreguntasFrecuentes {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    height: 230vh;
+  }
+
+  .contenedorPreguntasFrecuentes h3{
+    font-size: 1rem;
+    margin-top: 3rem;
+    text-align: center;
+  }
+
+  .contenedorPreguntasFrecuentes p {
+    font-size: 0.8rem;
+    margin-top: -1rem;
+    text-align: justify;
+    margin-bottom: -2rem;
+    line-height: 1.2rem;
+  }
+
+  /*FOOTER */
+
+  .contenedorTotalFooter {
+    display: flex;
+    display: block;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    font-size: 0.7rem;
+    line-height: 0.2rem;
+    height: 3.5rem;
+    justify-content: center;
+  }
+
+  .redes img {
+    height: 20px;
+    padding-top: 0.3rem;
+  }
+
+  .parrafoFooter {
+    text-align: center;
+    padding: 0;
+    line-height: 0.8rem;
+    margin-top: -0.3rem;
+  }
+}
